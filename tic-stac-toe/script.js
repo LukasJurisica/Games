@@ -1,5 +1,3 @@
-import { ClearQueryParams } from "./common.js"
-
 const colours = ["White", "Black"]
 const main_board = document.getElementById("standard-board");
 const white_bench = document.getElementById("white-bench");
@@ -167,6 +165,5 @@ function ResetBoard() {
 	game_state.turn = 0;
 }
 
-ClearQueryParams();
 document.getElementById("replay-button").onclick = ResetBoard;
 ResetBoard();
